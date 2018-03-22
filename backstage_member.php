@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +40,7 @@
 <div id="header">
 <h1>會員資料--後台管理</h1>
 <?php
-session_start();
+//session_start();
 //要用isset...
 if(isset($_SESSION['name']))
 	echo'Hi,'.$_SESSION['name'];
@@ -61,9 +64,9 @@ if(isset($_SESSION['name']))
 
 <?php
 $mysqlhost="localhost";
-$mysqluser="root";
-$mysqlpasswd="";
-$mysqldb="wine";
+$mysqluser="id5145958_root";
+$mysqlpasswd="123456";
+$mysqldb="id5145958_wine";
 
 //sql連線
 $mysqli = new mysqli($mysqlhost, $mysqluser, $mysqlpasswd, $mysqldb);

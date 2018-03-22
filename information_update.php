@@ -1,8 +1,8 @@
 <?php
 $mysqlhost="localhost";
-$mysqluser="root";
-$mysqlpasswd="";
-$mysqldb="wine";
+$mysqluser="id5145958_root";
+$mysqlpasswd="123456";
+$mysqldb="id5145958_wine";
 
 //$wine 已經被使用
 $wine_update=$_POST['wine'];

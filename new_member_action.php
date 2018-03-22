@@ -1,8 +1,8 @@
 <?php
 $mysqlhost="localhost";
-$mysqluser="root";
-$mysqlpasswd="";
-$mysqldb="wine";
+$mysqluser="id5145958_root";
+$mysqlpasswd="123456";
+$mysqldb="id5145958_wine";
 
 $name_action=$_POST['name'];
 $phone_action=$_POST['phone'];
@@ -39,7 +39,7 @@ else if(!empty($name_action) && !empty($phone_action) && !empty($email_action) &
 	mysqli_query($mysqli, "SET NAMES 'utf8'");
 	mysqli_set_charset($mysqli,"utf8");
 	$sql = "INSERT INTO member(id, name, phone, email, pw, admin) 
-			VALUES('', '$_POST[name]', '$_POST[phone]', '$_POST[email]', PASSWORD('$_POST[pw]'), '');";
+			VALUES('', '$_POST[name]', '$_POST[phone]', '$_POST[email]', '$_POST[pw]', '');";
 	mysqli_query($mysqli,$sql)or die ("fail".mysql_error());//檢查是否連線成功
 	mysqli_close($mysqli);
 	header("location:login.php");

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +39,7 @@
 <div id="header">
 <h1>酒類資訊--產品資訊</h1>
 <?php
-session_start();
+//session_start();
 //要用isset...
 if(isset($_SESSION['name']))
 	echo'Hi,'.$_SESSION['name'];
@@ -68,9 +71,9 @@ echo'<a href="blood_alc.php">酒精濃度估算</a><br>';
 <p>
 <?php
 $mysqlhost="localhost";
-$mysqluser="root";
-$mysqlpasswd="";
-$mysqldb="wine";
+$mysqluser="id5145958_root";
+$mysqlpasswd="123456";
+$mysqldb="id5145958_wine";
 
 //sql連線
 $mysqli = new mysqli($mysqlhost, $mysqluser, $mysqlpasswd, $mysqldb);

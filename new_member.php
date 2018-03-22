@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -35,7 +38,7 @@
 <div id="header">
 <h1>新增會員</h1>
 <?php
-session_start();
+//session_start();
 //要用isset...
 if(isset($_SESSION['name']))
 	echo'Hi,'.$_SESSION['name'];

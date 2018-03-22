@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +39,6 @@
 <div id="header">
 <h1>酒類資訊--後台管理</h1>
 <?php
-session_start();
 //要用isset...
 if(isset($_SESSION['name']))
 	echo'Hi,'.$_SESSION['name'];

@@ -1,4 +1,10 @@
-
+<?php
+session_start();
+//要用isset...
+/*
+if(isset($_SESSION['name']))
+	echo'Hi,'.$_SESSION['name'];*/
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,10 +40,10 @@
 </head>
 <body>
 
+
 <div id="header">
 <h1>酒類資訊</h1>
 <?php
-session_start();
 //要用isset...
 if(isset($_SESSION['name']))
 	echo'Hi,'.$_SESSION['name'];

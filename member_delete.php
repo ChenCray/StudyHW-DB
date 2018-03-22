@@ -1,8 +1,8 @@
 <?php
 $mysqlhost="localhost";
-$mysqluser="root";
-$mysqlpasswd="";
-$mysqldb="wine";
+$mysqluser="id5145958_root";
+$mysqlpasswd="123456";
+$mysqldb="id5145958_wine";
 
 //sql連線
 $mysqli = new mysqli($mysqlhost, $mysqluser, $mysqlpasswd, $mysqldb);

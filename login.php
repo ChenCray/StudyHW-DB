@@ -1,6 +1,11 @@
+<?php
+session_start();
+//要用isset...
+/*
+if(isset($_SESSION['name']))
+	echo'Hi,'.$_SESSION['name'];*/
+?>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
 
 <!DOCTYPE html>
 <html>
@@ -39,13 +44,19 @@
 
 <div id="header">
 <h1>會員登入</h1>
+<?php
+//要用isset...
+
+if(isset($_SESSION['name']))
+	echo'Hi,'.$_SESSION['name'];
+?>
 </div>
 
 <div id="nav">
 <a href="index.php">首頁</a> <br>
 <a href="information.php">產品資訊</a><br>
 <a href="login.php">會員登入</a><br>
-<a href="blood_alc.php">酒精濃度估算</a><br>;
+<a href="blood_alc.php">酒精濃度估算</a><br>
 </div>
 
 <div id="section">
